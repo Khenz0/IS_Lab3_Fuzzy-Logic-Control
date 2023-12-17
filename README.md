@@ -14,12 +14,12 @@ This repository contains the implementation of a Fuzzy Logic-based control syste
 
 ### Amount of Food Consumed (F)
 - Linguistic Variables: Low, Medium, High
-- Universe of Discourse: 0 - 10
+- Universe of Discourse: 0 - 500
 - Membership Functions: Low, Medium, High
 
 ### Food Dispenser Motor Speed (MS)
 - Linguistic Variables: Slow, Moderate, Fast
-- Universe of Discourse: 0 - 2
+- Universe of Discourse: 0 - 300
 - Membership Functions: Slow, Moderate, Fast
 
 ## Rule Base
@@ -51,7 +51,7 @@ To use the Fuzzy Pet Feeder Control System, provide the values for the pet's hun
 
 ```python
 # Example Usage
-values = { H: 30, F: 5 }
+values = { H: 10, F: 400 }
 output = fuzzy_control_system(values)
 print(f"Recommended Food Dispenser Motor Speed: {output}")
 ```
